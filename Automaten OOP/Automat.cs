@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace Automaten_OOP
 {
-    class Automat
+    public class Automat
     {
+        public Automat()
+        {
+        }
 
-        public Automat(string name, int price, int lagerstatus)
+        public Automat(string name, int price)
         {
             Name = name;
             Price = price;
-            LagerStatus = lagerstatus;
         }
 
-        public string Name { get; set; }
-
-        public int LagerStatus { get; set; }
+        public string Name { get; private set; }
 
         public int Price { get; set; }
-    }
+    }    
+
 }
